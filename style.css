@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icon_phone {
+    width: 10px;
+    height: 10px;
+}
+
+.icon_clock {
+    width: 10px;
+    height: 10px;
+}
+
+.div_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 40px;
+    color: grey;
+    padding-bottom: 10px;
+}
+
+.number {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+.program {
+    font-size: 10px;
+}
+
+.icon_and_program {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+
+.link_taskbar_home {
+    /* color: #95b052; */
+}
+
+.list_taskbar {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    /* color: grey; */
+}
+
+
+.list_services {
+    list-style-type: none;
+    /* padding-left: 30px; */
+    display: none;
+    position: absolute;
+    /* color: grey; */
+    padding-top: 15px;
+}
+
+.show_list:hover .list_services {
+    display: block;
+
+}
+
+.link_taskbar_services {
+    /* padding-left: 60px; */
+    /* color: grey; */
+}
+
+.link_taskbar_services:hover {
+    text-decoration: underline;
+}
+
+.link_taskbar {
+    font-size: 20px;
+    color: grey;
+
+}
+
+.link_taskbar:hover {
+    color: #95b052;
+    background-color: rgba(255, 255, 255, 0.455);
+}
+
+.photo_plant_left {
+    width: 100%;
+}
+
+.photo_plant_right {
+    width: 100%;
+    /* margin-left: 50px; */
+}
+
+.pic_plants {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid; */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pic_plants_left {
+    width: 35%;
+}
+
+.pic_plants_center {
+    width: 30%;
+    /* border: 1px solid; */
+    display: flex;
+}
+
+.pic_plants_right {
+    width: 35%;
+}
+
+.title {
+    /* border: 1px solid; */
+    width: 100%;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    margin-top: 30%;
+    /* font-size: 50px; */
+    height: 20%;
+}
+
+main {
+    background-image: url("./img/background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 12741.2px;
+    min-width: 12741.2px;
+    background-size: cover;
+}
+
+.button_services {
+    background-color: #95b052;
+    border: none;
+    width: 80%;
+    padding-bottom: 40px;
+    /* text-align: center; */
+    margin-top: 30px;
+}
+.div_btn_srv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
