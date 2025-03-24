@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Iansui&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -45,17 +47,19 @@
 
 
 
-.link_taskbar_home {
-    /* color: #95b052; */
-}
-
+ .div_taskbar{
+    /* display: flex;
+    position: ; */
+ } 
 .list_taskbar {
     list-style-type: none;
-    display: flex;
+    /* position: fixed; */
     gap: 50px;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 15px;
+    margin-bottom: 20px;
     /* color: grey; */
 }
 
@@ -67,28 +71,36 @@
     position: absolute;
     /* color: grey; */
     padding-top: 15px;
+    background: #94b73d63;
 }
-
-.show_list:hover .list_services {
-    display: block;
-
-}
-
-.link_taskbar_services {
-    /* padding-left: 60px; */
-    /* color: grey; */
-}
-
-.link_taskbar_services:hover {
-    text-decoration: underline;
-}
-
 .link_taskbar {
     font-size: 20px;
     color: grey;
 
 }
+.link_taskbar_srv{
+    /* font-family: "Iansui", cursive; */
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    
+}
+.show_list:hover .list_services {
+    display: block;
+    /* transition: 1s; */
+}
+.title_text{
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+    font-weight: 100;
+}
+.subtitle_text{
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    margin-left: 150px;
+    color: #737373;
 
+}
 .link_taskbar:hover {
     color: #95b052;
     background-color: rgba(255, 255, 255, 0.455);
@@ -100,7 +112,15 @@
 
 .photo_plant_right {
     width: 100%;
+    height: 100%;
     /* margin-left: 50px; */
+}
+.pic_plants_right {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .pic_plants {
@@ -109,52 +129,185 @@
     /* border: 2px solid; */
     justify-content: space-between;
     width: 100%;
+    background-color: #94b73dbf;
+    /* background: rgb(148,183,61); */
+    position: relative;
+    height: 100vh;
+    /* border-bottom: 1px solid red; */
+}
+header{
+    background-color: white;
 }
 
-.pic_plants_left {
-    width: 35%;
+.form{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 1000px solid transparent;
+    border-bottom: 1000px solid white;
+    right: 0;
+    bottom: 0;
+ 
 }
-
 .pic_plants_center {
-    width: 30%;
+    width: 60%;
     /* border: 1px solid; */
     display: flex;
-}
-
-.pic_plants_right {
-    width: 35%;
-}
-
-.title {
-    /* border: 1px solid; */
-    width: 100%;
-    font-family: "Dancing Script", cursive;
-    text-align: center;
-    margin-top: 30%;
-    /* font-size: 50px; */
-    height: 20%;
-}
-
-main {
-    background-image: url("./img/background.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 12741.2px;
-    min-width: 12741.2px;
-    background-size: cover;
-}
-
-.button_services {
-    background-color: #95b052;
-    border: none;
-    width: 80%;
-    padding-bottom: 40px;
-    /* text-align: center; */
     margin-top: 30px;
+    height: 50%;
 }
-.div_btn_srv{
+
+
+
+/* .title {
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+} */
+.div_desc{
+    background-color: #94b73d;
+    /* border: 1px solid; */
+    padding: 100px;
+}
+.title_div{
+    margin-top: 150px;
+    margin-left: 90px;
+    height: 50%;
+}
+.desc_title{
+    font-family: "Cormorant", serif;
+    color: white;
+    font-size: 45px;
+}
+.desc_text{
+    font-family: "Iansui", cursive;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.div_services {
+    background-color:  rgba(255, 255, 255, 0.367);
+    margin-top: 40px;
+    margin-right: 20px;
+    border-radius: 30px;
+    height: 200px;
+}
+.div_services_link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.pic_srv {
+    width: 300px;
+    border-radius: 30px;
+}
+.pic_srv_first{
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.title_services{
+    font-family: "Iansui", cursive;
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding-right: 15px;
+    color: black;
+    padding-left: 40px;
+    /* background-color: rgba(240, 248, 255, 0.345); */
+        /* cursor: services; */
+        /* background: linear-gradient(145deg, #2a2a2a, #383838); */
+        /* border: 2px solid #00bcd4; */
+}
+/* .help:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 5px 15px #00bcd450;
+} */
+.desc_title_team{
+    font-family: "Cormorant", serif;
+    color: white;
+    font-size: 45px;
+}
+.div_container_services{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    padding-top: 7%;
+    padding-left: 25px;
 }
+.div_desc_second{
+    background-color: #94b73d;
+    padding: 100px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    margin: auto;
+}
+.cursor-box:hover{
+    transform: scale(1.05) translateY(-5px);
+    transition: 1s;
+
+}
+.cursor-box{
+    transition: 1s;
+}
+.contact_footer{
+    font-family: "Cormorant", serif;
+    font-size: 40px;
+}
+.title_footer{
+    /* font-family: "Cormorant", serif; */
+    /* font-size: 20px; */
+    font-family: "Iansui", cursive;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+/* .tlf_footer{
+    font-family: "Iansui", cursive;
+    font-weight: bold;
+} */
+.number_footer{
+    font-family: "Iansui", cursive;
+    /* color: gray; */
+}
+
+.div_footer{
+    /* background-color:  rgba(255, 255, 255, 0.367); */
+    /* filter: drop-shadow(0 0 0.75rem black); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+main{
+    background-image: url("./img/fundal_trans.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.coafor_cuts_photo{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+/* @media (max-width: 1486px){
+    .pic_plants_rightc {
+        display: none;
+       
+    }
+} */

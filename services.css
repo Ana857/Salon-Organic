@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Iansui&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icon_phone {
+    width: 10px;
+    height: 10px;
+}
+
+.icon_clock {
+    width: 10px;
+    height: 10px;
+}
+
+.div_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 40px;
+    color: grey;
+    padding-bottom: 10px;
+}
+
+.number {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+.program {
+    font-size: 10px;
+}
+
+.icon_and_program {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.list_taskbar {
+    list-style-type: none;
+    /* position: fixed; */
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    /* color: grey; */
+}
+
+
+.list_services {
+    list-style-type: none;
+    /* padding-left: 30px; */
+    display: none;
+    position: absolute;
+    /* color: grey; */
+    padding-top: 15px;
+    background: #94b73d63;
+}
+
+.link_taskbar {
+    font-size: 20px;
+    color: grey;
+
+}
+
+.link_taskbar_srv {
+    /* font-family: "Iansui", cursive; */
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.show_list:hover .list_services {
+    display: block;
+    /* transition: 1s; */
+}
+
+.title_text {
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.subtitle_text {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    margin-left: 150px;
+    color: #737373;
+
+}
+
+.link_taskbar:hover {
+    color: #95b052;
+    background-color: rgba(255, 255, 255, 0.455);
+}
+
+main {
+    background-image: url("./img/fundal_trans.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+    /* min-width: 12741.2px; */
+    background-size: cover;
+}
+
+.div_btn_srv {
+    background-color: #95b052;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    /* margin-top: 30px; */
+    margin: 30px auto;
+}
+
+.div_btn_srv_text {
+    color: white;
+    text-decoration: none;
+    /* margin-bottom: 10px; */
+    /* padding-bottom: 25px; */
+}
+
+header {
+    background-color: white;
+}
+
+.div_first_label {
+    background-color: rgba(255, 255, 255, 0.367);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-right: 78%; */
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 1s;
+}
+.div_first_label:hover{
+    transform: scale(1.05) translateY(-5px);
+    transition: 1s;
+}
+
+.first_label {
+    text-decoration: none;
+}
+
+.img_frst_lbl {
+    width: 350px;
+   height: 400px;
+   margin-top: 10px;
+}
+
+.txt_frst_label {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+
+.container_labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
