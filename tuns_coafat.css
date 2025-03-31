@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Iansui&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* font-family: "Iansui", cursive; */
+/* font-family: "Dancing Script", cursive; */
+/* font-family: "Cormorant", serif; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.icon_phone {
+    width: 10px;
+    height: 10px;
+}
+
+.icon_clock {
+    width: 10px;
+    height: 10px;
+}
+
+.div_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 40px;
+    color: grey;
+    padding-bottom: 10px;
+}
+
+.number {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+.program {
+    font-size: 10px;
+}
+
+.icon_and_program {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.list_taskbar {
+    list-style-type: none;
+    /* position: fixed; */
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    /* color: grey; */
+}
+
+
+.list_services {
+    list-style-type: none;
+    /* padding-left: 30px; */
+    display: none;
+    position: absolute;
+    /* color: grey; */
+    padding-top: 15px;
+    background: #94b73d63;
+}
+
+.link_taskbar {
+    font-size: 20px;
+    color: grey;
+    /* position: fixed; */
+}
+
+.link_taskbar_srv {
+    /* font-family: "Iansui", cursive; */
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.show_list:hover .list_services {
+    display: block;
+    /* transition: 1s; */
+}
+
+.title_text {
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.subtitle_text {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    margin-left: 150px;
+    color: #737373;
+
+}
+
+.link_taskbar:hover {
+    color: #95b052;
+    background-color: rgba(255, 255, 255, 0.455);
+}
+
+.big_title {
+    font-family: "Cormorant", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.paragraph {
+    font-family: "Cormorant", serif;
+}
+
+.txt_frst_label {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img_curles {
+    width: 150px;
+}
