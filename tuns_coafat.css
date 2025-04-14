@@ -12,17 +12,50 @@
 }
 
 
-
-.icon_phone {
-    width: 10px;
-    height: 10px;
-}
-
 .icon_clock {
     width: 10px;
     height: 10px;
 }
+.number {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: grey;
+}
+.link_taskbar_srv {
+    /* font-family: "Iansui", cursive; */
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
 
+}
+.list_services {
+    list-style-type: none;
+    /* padding-left: 30px; */
+    display: none;
+    position: absolute;
+    /* color: grey; */
+    padding-top: 20px;
+    /* color: black; */
+    background: #94b73d63;
+}
+
+
+.link_taskbar {
+    font-size: 20px;
+    color: grey;
+}
+.div_header{
+    border: 1px solid;
+    height: 80px;
+    position: fixed;
+    /* border: 1px solid; */
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.799);
+}
 .div_icons {
     display: flex;
     flex-direction: row;
@@ -32,65 +65,48 @@
     color: grey;
     padding-bottom: 10px;
 }
-
-.number {
-    text-decoration: none;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: grey;
-}
-
-.program {
-    font-size: 10px;
-}
-
 .icon_and_program {
     display: flex;
     flex-direction: row;
     gap: 5px;
 }
-
-.list_taskbar {
+.icon_phone {
+    width: 10px;
+    height: 10px;
+}
+.program {
+    font-size: 10px;
+}
+ .div_taskbar{
+   
+ } 
+ .list_taskbar {
     list-style-type: none;
-    /* position: fixed; */
-    gap: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 50px;
     margin-top: 15px;
-    /* color: grey; */
-}
-
-
-.list_services {
-    list-style-type: none;
-    /* padding-left: 30px; */
-    display: none;
-    position: absolute;
-    /* color: grey; */
-    padding-top: 15px;
-    background: #94b73d63;
-}
-
-.link_taskbar {
-    font-size: 20px;
-    color: grey;
+    margin-bottom: 20px;
     /* position: fixed; */
+   
+    /* color: grey; */
 }
-
-.link_taskbar_srv {
-    /* font-family: "Iansui", cursive; */
+/* .link_taskbar_srv {
     font-size: 15px;
     text-decoration: none;
     color: black;
 
-}
+} */
+ header{
+    background-color: white;
+ }
 
 .show_list:hover .list_services {
     display: block;
     /* transition: 1s; */
 }
+
 
 .title_text {
     font-family: "Dancing Script", cursive;
@@ -121,6 +137,9 @@
 
 .paragraph {
     font-family: "Cormorant", serif;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 22px;
 }
 
 .txt_frst_label {
