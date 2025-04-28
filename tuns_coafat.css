@@ -152,3 +152,61 @@
 .img_curles {
     width: 150px;
 }
+.div_footer {
+    /* background-color:  rgba(255, 255, 255, 0.367); */
+    /* filter: drop-shadow(0 0 0.75rem black); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 40px; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.div_img_footer {
+    margin-left: 80px;
+}
+.contact_footer {
+    font-family: "Cormorant", serif;
+    font-size: 50px;
+    color: grey;
+    padding-bottom: 10px;
+}
+.title_footer {
+    /* font-family: "Cormorant", serif; */
+    /* font-size: 20px; */
+    font-family: "Iansui", cursive;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.number_footer {
+    font-family: "Iansui", cursive;
+    color: grey;
+
+}
+.title_footer {
+    /* font-family: "Cormorant", serif; */
+    /* font-size: 20px; */
+    font-family: "Iansui", cursive;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.number_footer {
+    font-family: "Iansui", cursive;
+    color: grey;
+
+}
+.footer_map {
+    margin-right: 80px;
+}
+
+.big_titleV{
+    font-family: "Cormorant", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 120px;
+}

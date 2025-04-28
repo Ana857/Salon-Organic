@@ -2,14 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Iansui&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     /* max-inline-size: 1920px; */
     min-inline-size: 320px;
@@ -17,6 +20,7 @@ body{
     padding: 0;
     word-wrap: break-word;
 }
+
 .icon_clock {
     width: 10px;
     height: 10px;
@@ -37,8 +41,8 @@ body{
 
 
 
-.div_header{
-    border: 1px solid;
+.div_header {
+    /* border: 1px solid; */
     height: 80px;
     position: fixed;
     /* border: 1px solid; */
@@ -47,6 +51,7 @@ body{
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.799);
 }
+
 .div_icons {
     display: flex;
     flex-direction: row;
@@ -56,22 +61,42 @@ body{
     color: grey;
     padding-bottom: 10px;
 }
+
 .icon_and_program {
     display: flex;
     flex-direction: row;
     gap: 5px;
 }
+
+.div_icons_adress_program {
+    display: flex;
+    gap: 10px;
+}
+
 .icon_phone {
     width: 10px;
     height: 10px;
 }
+
 .program {
     font-size: 10px;
 }
- .div_taskbar{
-   
- } 
- .list_taskbar {
+
+.mobile_menu {
+    display: none;
+}
+
+.nav {
+    display: none;
+}
+
+.nav_menu {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* list-style-type: none; */
+}
+
+.list_taskbar {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -80,7 +105,7 @@ body{
     margin-top: 15px;
     margin-bottom: 20px;
     /* position: fixed; */
-   
+
     /* color: grey; */
 }
 
@@ -94,40 +119,67 @@ body{
     list-style-type: none;
     /* padding-left: 30px; */
     display: none;
-    position: absolute;
+    /* position: absolute; */
     /* color: grey; */
     padding-top: 20px;
     /* color: black; */
     background: #94b73d63;
+    border-radius: 5px;
 }
+.list_services_hover{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    padding-top: 20px;
+    background: #94b73d63;
+    border-radius: 5px;
+}
+
+.div_list_services {
+    border: 1px solid;
+}
+
+.list_drop_down {
+    display: flex;
+}
+
+.plus_icon {
+    display: none;
+}
+
 .link_taskbar {
     font-size: 20px;
     color: grey;
-
+    text-decoration: none;
 }
-.link_taskbar_srv{
+
+.link_taskbar_srv {
     /* font-family: "Iansui", cursive; */
     font-size: 15px;
     text-decoration: none;
     color: black;
-    
+
 }
-.show_list:hover .list_services {
+
+.show_list:hover .list_services_hover {
     display: block;
     /* transition: 1s; */
 }
-.title_text{
+
+.title_text {
     font-family: "Dancing Script", cursive;
     font-size: 60px;
     font-weight: 100;
 }
-.subtitle_text{
+
+.subtitle_text {
     font-family: "Dancing Script", cursive;
     font-size: 35px;
     margin-left: 150px;
     color: #737373;
 
 }
+
 .link_taskbar:hover {
     color: #95b052;
     background-color: rgba(255, 255, 255, 0.455);
@@ -154,11 +206,12 @@ body{
     /* margin-top: 60px; */
     /* border: 4px solid rgb(255, 0, 204); */
 }
-header{
+
+header {
     background-color: white;
 }
 
-.form{
+.form {
     /* position: absolute;
     width: 0;
     height: 0;
@@ -173,8 +226,9 @@ header{
     clip-path: polygon(100% 0, 60% 100%, 100% 100%);
     right: 0;
     bottom: 0;
- 
+
 }
+
 .pic_plants_center {
     width: 50%;
     /* border: 1px solid blue; */
@@ -182,6 +236,7 @@ header{
     margin-top: 30px;
     height: 50%;
 }
+
 .pic_plants_right {
     /* border: 1px solid red; */
     width: 50%;
@@ -189,6 +244,7 @@ header{
     position: relative;
 
 }
+
 .photo_plant_right {
     /* border: 1px solid; */
     width: 70%;
@@ -207,29 +263,33 @@ header{
     width: 100%;
     height: 100%;
 } */
-.div_desc{
+.div_desc {
     background-color: #94b73d;
     /* border: 1px solid; */
     padding: 80px;
-   
+
 }
-.div_desc_border{
+
+.div_desc_border {
     border: 3px solid grey;
     padding: 50px;
     text-align: center;
 }
-.title_div{
+
+.title_div {
     margin-top: 150px;
     margin-left: 150px;
     height: 100%;
 }
-.desc_title{
+
+.desc_title {
     font-family: "Cormorant", serif;
     color: white;
     font-size: 45px;
     padding-bottom: 15px;
 }
-.desc_text{
+
+.desc_text {
     font-family: "Iansui", cursive;
     color: white;
     font-size: 20px;
@@ -238,13 +298,14 @@ header{
 
 
 .div_services {
-    background-color:  rgba(255, 255, 255, 0.367);
+    background-color: rgba(255, 255, 255, 0.367);
     margin-top: 40px;
     margin-right: 20px;
     border-radius: 30px;
     height: 200px;
 }
-.div_services_link{
+
+.div_services_link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -254,13 +315,15 @@ header{
     width: 300px;
     border-radius: 30px;
 }
-.pic_srv_first{
+
+.pic_srv_first {
     width: 300px;
     height: 200px;
     border-radius: 30px;
     object-fit: cover;
 }
-.title_services{
+
+.title_services {
     font-family: "Iansui", cursive;
     letter-spacing: 2px;
     font-size: 25px;
@@ -268,21 +331,23 @@ header{
     color: black;
     padding-left: 40px;
     /* background-color: rgba(240, 248, 255, 0.345); */
-        /* cursor: services; */
-        /* background: linear-gradient(145deg, #2a2a2a, #383838); */
-        /* border: 2px solid #00bcd4; */
+    /* cursor: services; */
+    /* background: linear-gradient(145deg, #2a2a2a, #383838); */
+    /* border: 2px solid #00bcd4; */
 }
+
 /* .help:hover {
     transform: scale(1.05) translateY(-5px);
     box-shadow: 0 5px 15px #00bcd450;
 } */
-.desc_title_team{
+.desc_title_team {
     font-family: "Cormorant", serif;
     color: white;
     font-size: 45px;
     padding-bottom: 15px;
 }
-.div_container_services{
+
+.div_container_services {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -290,7 +355,8 @@ header{
     padding-top: 10%;
     padding-left: 25px;
 }
-.div_desc_second{
+
+.div_desc_second {
     background-color: #94b73d;
     padding: 100px;
     /* display: flex;
@@ -298,27 +364,24 @@ header{
     justify-content: center; */
     margin: auto;
 }
-.div_desc_sc_border{
+
+.div_desc_sc_border {
     border: 2px solid grey;
     padding: 50px;
     text-align: center;
 }
-.cursor-box:hover{
+
+.cursor-box:hover {
     transform: scale(1.05) translateY(-5px);
     transition: 1s;
 
 }
-.cursor-box{
+
+.cursor-box {
     transition: 1s;
 }
-.img_footer{
-    /* width: 800px; */
-  
-}
 
-
-
-.title_footer{
+.title_footer {
     /* font-family: "Cormorant", serif; */
     /* font-size: 20px; */
     font-family: "Iansui", cursive;
@@ -326,33 +389,38 @@ header{
     padding-bottom: 5px;
     padding-top: 5px;
 }
+
 /* .tlf_footer{
     font-family: "Iansui", cursive;
     font-weight: bold;
 } */
-.number_footer{
+.number_footer {
     font-family: "Iansui", cursive;
     color: grey;
 
 }
-.number_footer:hover{
+
+.number_footer:hover {
     text-decoration: none;
 }
 
 
-.div_img_footer{
+.div_img_footer {
     margin-left: 80px;
- }
-.footer_map{
-   margin-right: 80px;
 }
-.contact_footer{
+
+.footer_map {
+    margin-right: 80px;
+}
+
+.contact_footer {
     font-family: "Cormorant", serif;
     font-size: 50px;
     color: grey;
     padding-bottom: 10px;
 }
-.div_footer{
+
+.div_footer {
     /* background-color:  rgba(255, 255, 255, 0.367); */
     /* filter: drop-shadow(0 0 0.75rem black); */
     display: flex;
@@ -372,7 +440,7 @@ header{
 
 
 
-main{
+main {
     background-image: url("./img/fundal_trans.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -381,7 +449,7 @@ main{
     background-size: cover;
 }
 
-.coafor_cuts_photo{
+.coafor_cuts_photo {
     object-fit: cover;
     width: 300px;
     height: 300px;
@@ -394,9 +462,91 @@ main{
 
 
 
-/* @media (max-width: 1486px){
-    .pic_plants_right {
+
+
+/* @media (max-width: 1596px) {
+    .pic_plants {
+        position: relative;
+    }
+    .form {
         display: none;
-       
+    }
+    .pic_plants_right{
+        position: absolute;
     }
 } */
+@media (max-width: 777px) {
+    .list_taskbar {
+        /* display: none; */
+        position: absolute;
+        right: -100%;
+        top: 80px;
+        /* border: 1px solid red; */
+        width: fit-content;
+        display: block;
+        transition: 1s;
+        text-align: left;
+        padding-bottom: 1200px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        background-color: white;
+    }
+
+    .list_taskbar li {
+        margin-bottom: 10px;
+    }
+
+    .list_drop_down {
+        align-items: center;
+        gap: 10px;
+        /* border: 1px solid; */
+        justify-content: space-between;
+    }
+
+    .show_list:hover .list_services_hover {
+        pointer-events: none;
+        display: none;
+    }
+
+    .plus_icon {
+        display: block;
+        padding-right: 10px;
+    }
+
+    .div_icons_adress_program {
+        position: absolute;
+        top: 40px;
+    }
+
+    .div_icons {
+        justify-content: left;
+
+    }
+
+    .mobile_menu {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 35px;
+    }
+
+    .nav {
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+}
+
+
+.show_list_mobile {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 80px;
+
+}
+.show_services_list_mobile{
+    display: block;
+    /* position: absolute; */
+}
