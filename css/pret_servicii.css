@@ -1,0 +1,140 @@
+.price_list {
+    width: 60%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.384);
+    padding: 5px;
+    /* border: 2px solid brown; */
+}
+
+.pl_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+
+.pl_logo img {
+    padding-bottom: 10px;
+    padding-top: 30px;
+    width: 400px;
+
+}
+
+.div_menu_tuns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.tuns_menu {
+    font-family: "Iansui", cursive;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    /* border-top: 2px solid black;
+    border-bottom: 2px solid black; */
+}
+
+li {
+    font-family: "Iansui", cursive;
+}
+
+.pl_row {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pl_row:hover {
+    color: aliceblue;
+    background-color: rgba(128, 128, 128, 0.468);
+}
+
+.div_list {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+/* .p_right{
+    padding-right: 25px;
+} */
+/* .p_left{
+    padding-left: 25px
+} */
+.box_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* gap: 40px; */
+    /* border: 2px solid pink; */
+
+}
+
+.container_second_menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* border-left: 2px solid black; */
+}
+
+.container_first_menu {
+    border-right: 2px solid black;
+    width: 50%;
+    /* padding-right: 15px; */
+    /* border-spacing: 15px; */
+}
+
+.container_third_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+}
+
+.box_two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-top: 30px; */
+    /* border: 2px solid red; */
+}
+.title_box_three{
+    font-family: "Iansui", cursive;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+@media(max-width: 431px){
+    .pl_logo img{
+        width: 300px;
+    }
+}
+@media(max-width: 681px){
+    .box_div{
+        flex-direction: column;
+    }
+    .container_first_menu{
+        border-right: none;
+        width: 100%;
+    }
+    .container_second_menu{
+        width: 100%;
+    }
+}
+@media(max-width: 1026px){
+    .price_list{
+        width: 90%;
+    }
+}
